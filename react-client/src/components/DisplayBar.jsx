@@ -1,10 +1,21 @@
 import React from 'react';
 
-const DisplayBar = (props) => (
-  <div className='display'>
-    <span>{ props.value }</span>
-  </div>
-)
+const DisplayBar = (props) => {
+  let result = '';
+  if (props.state.result && !props.state.left) {
+    result = props.state.result;
+  } else if (!props.state.operater) {
+    result = props.state.left;
+  } else if (props.state.operater) {
+    result = props.state.right;
+  }
+
+  return (
+    <div className='display'>
+      { result || 0 }
+    </div>
+  )
+}
 
 export default DisplayBar;
 
