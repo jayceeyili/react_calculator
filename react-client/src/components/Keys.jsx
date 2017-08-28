@@ -1,9 +1,10 @@
 import React from 'react';
+import './Keys.css';
 
 const Keys = props => {
 
   return (
-    <div>
+    <div className='keys'>
       <div className='firstRow'>
         <button
           value='AC'
