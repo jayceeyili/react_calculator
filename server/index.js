@@ -8,22 +8,23 @@ var app = express();
 
 // UNCOMMENT FOR REACT
 app.use(express.static(__dirname + '/../react-client/dist'));
+app.use(bodyParser.json());
 
 // UNCOMMENT FOR ANGULAR
 // app.use(express.static(__dirname + '/../angular-client'));
 // app.use(express.static(__dirname + '/../node_modules'));
 
 app.get('/items', function (req, res) {
-  items.selectAll(function(err, data) {
-    if(err) {
-      res.sendStatus(500);
-    } else {
-      res.json(data);
-    }
-  });
+  // items.selectAll(function(err, data) {
+  //   if(err) {
+  //     res.sendStatus(500);
+  //   } else {
+  //     res.json(data);
+  //   }
+  // });
+  res.json('hello world');
 });
 
 app.listen(3000, function() {
   console.log('listening on port 3000!');
 });
-
