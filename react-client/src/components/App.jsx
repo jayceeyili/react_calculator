@@ -7,7 +7,7 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-
+      value: 0
     };
 
     // this.clickHandler = this.clickHandler.bind(this);
@@ -21,7 +21,7 @@ export default class App extends React.Component {
     return (
       <div>
         Calculator
-        <DisplayBar />
+        <DisplayBar value={ this.state.value }/>
         <Keys />
       </div>
     )

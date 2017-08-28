@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DisplayBar = (props) => (
-  <div>
+  <div className='display'>
     <span>{ props.value }</span>
   </div>
 )
