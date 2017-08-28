@@ -1,6 +1,6 @@
 .calculator {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   height: 100%;
 }

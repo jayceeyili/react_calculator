@@ -2,6 +2,7 @@ import React from 'react'
 import DisplayBar from './DisplayBar.jsx'
 import Keys from './Keys.jsx'
 import calculate from '../scripts/calculate.js'
+import './App.css'
 
 export default class App extends React.Component {
   constructor(props) {
