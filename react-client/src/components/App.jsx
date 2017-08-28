@@ -10,19 +10,19 @@ export default class App extends React.Component {
       value: 0
     };
 
-    // this.clickHandler = this.clickHandler.bind(this);
+    this.clickHandler = this.clickHandler.bind(this);
   }
 
-  // clickHandler(e) {
-  //   console.log(e.target.text);
-  // }
+  clickHandler(value) {
+    console.log(value);
+  }
 
   render() {
     return (
       <div>
         Calculator
         <DisplayBar value={ this.state.value }/>
-        <Keys />
+        <Keys clickHandler={ this.clickHandler }/>
       </div>
     )
   }
