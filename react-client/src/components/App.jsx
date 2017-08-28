@@ -58,8 +58,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div>
-        Calculator
+      <div className='calculator'>
         <DisplayBar
           state={ this.state }
         />
